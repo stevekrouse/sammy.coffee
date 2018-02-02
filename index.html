@@ -8,15 +8,24 @@
       html {
         width: 100%;
         height: 100%;
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
       }
-      body {
-        background-position: center center; 
-        background-image: url('./sammy.jpg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: #593C1F;
+      @media (max-width: 900px) {
+        body {
+          background-position: center center; 
+          background-image: url('./sammy.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          /*background-color: #593C1F;*/
+        }
+      }
+      @media (min-width: 901px) {
+        body {
+          background-position: center center; 
+          background-image: url('./sammy.jpg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-color: #593C1F;
+        }
       }
     </style>
   </head>
